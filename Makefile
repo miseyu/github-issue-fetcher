@@ -90,7 +90,7 @@ cross-build: deps-cross-build
 	gox -os="darwin linux windows" -arch="386 amd64" -output "pkg/{{.OS}}_{{.Arch}}/{{.Dir}}"
 
 .PHONY: deps-cross-build
-deps-cross-build: deps lib/bindata.go gox
+deps-cross-build: deps gox
 
 .PHONY: gox
 gox:
