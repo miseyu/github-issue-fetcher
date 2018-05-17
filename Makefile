@@ -1,4 +1,4 @@
-NAME := github-nippou
+NAME := github-issue-fetcher
 SRCS := $(shell find . -type f ! -path ./lib/bindata.go -name '*.go' ! -name '*_test.go')
 CONFIGS := $(wildcard config/*)
 VERSION := v$(shell grep 'const Version ' lib/version.go | sed -E 's/.*"(.+)"$$/\1/')
